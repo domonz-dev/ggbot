@@ -373,4 +373,4 @@ bot.on("ready", () => {
     { type: "playing" }
   );
 });
-bot.login("token");
+bot.login(token);
