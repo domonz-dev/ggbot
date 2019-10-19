@@ -1,6 +1,5 @@
 const Discord = require("discord.js");
 const bot = new Discord.Client({ disableEveryone: true });
-const config = require("./config.json");
 const readline = require("readline");
 var prefix = "g.";
 bot.on("ready", () => {
@@ -370,8 +369,8 @@ bot.on("message", message => {
 });
 bot.on("ready", () => {
   bot.user.setActivity(
-    `with | g.help | ${bot.users.size} users | ${bot.guilds.size} guilds`,
+    `with | g.help | ${bot.users.size} users `,
     { type: "playing" }
   );
 });
-bot.login(config.token);
+bot.login("token");
